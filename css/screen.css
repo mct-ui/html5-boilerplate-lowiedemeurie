@@ -1,5 +1,6 @@
 body {
-  background: khaki;
+  max-width: 42em;
+  margin: 0 auto;
 }
 html {
   font-size: 16px;
@@ -7,6 +8,7 @@ html {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #111;
   padding: 24px 24px 0;
+  scroll-behavior: smooth;
 }
 ::-moz-selection {
   background: #44c8f5;
@@ -65,10 +67,6 @@ ul,
 ol {
   padding-left: 24px;
 }
-blockquote* {
-  font-size: inherit;
-  line-height: inherit;
-}
 
 li ul,
 li ol {
@@ -81,6 +79,11 @@ blockquote {
   line-height: 32px;
   margin: 0 0 24px;
   font-family: "Times New Roman", Times, serif;
+}
+
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 figcaption {
@@ -98,18 +101,37 @@ hr {
 }
 
 a {
-  color: yellow;
+  color: royalblue;
   transition: all 0.1s ease-in-out;
 }
 
 a:hover,
 a:focus {
-  color: rgb(20, 220, 20);
+  color: crimson ;
 }
 
 a:visited,
 a:active {
   color: blueviolet;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.odd {
+  background-color: whitesmoke;
 }
 
 /* Small devices (landscape phones, 576px and up) */
